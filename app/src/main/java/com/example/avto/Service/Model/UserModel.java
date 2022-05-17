@@ -1,6 +1,7 @@
 package com.example.avto.Service.Model;
 
 public class UserModel {
+
     private Integer id;
     private String username;
     private String email;

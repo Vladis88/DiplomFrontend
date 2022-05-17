@@ -14,15 +14,16 @@ import com.example.avto.R;
 import com.example.avto.Service.GetDataService;
 import com.example.avto.Service.Model.SubscriptionResponse;
 import com.google.android.material.button.MaterialButton;
+
 import java.util.List;
 
 public class SubscriptionsAdapter extends RecyclerView.Adapter<SubscriptionsAdapter.CustomViewHolder> {
-    private List<SubscriptionResponse> dataList;
-    private Context context;
 
+    private final List<SubscriptionResponse> dataList;
+    private Context context;
     private GetDataService service;
 
-    public SubscriptionsAdapter(Context context,List<SubscriptionResponse> dataList){
+    public SubscriptionsAdapter(Context context, List<SubscriptionResponse> dataList) {
         service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
         this.context = context;
         this.dataList = dataList;
