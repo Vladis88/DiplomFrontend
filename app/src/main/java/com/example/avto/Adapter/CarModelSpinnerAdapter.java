@@ -13,14 +13,12 @@ import com.example.avto.Model.CarModels.CarModel;
 
 public class CarModelSpinnerAdapter extends ArrayAdapter<CarModel> {
 
-    // Your sent context
-    private Context context;
     // Your custom values for the spinner (User)
-    private CarModel[] values;
+    private final CarModel[] values;
 
     public CarModelSpinnerAdapter(@NonNull Context context, int resource, CarModel[] values) {
         super(context, resource, values);
-        this.context = context;
+        // Your sent context
         this.values = values;
     }
 

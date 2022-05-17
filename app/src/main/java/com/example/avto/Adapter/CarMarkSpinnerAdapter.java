@@ -13,14 +13,12 @@ import com.example.avto.Model.CarModels.CarMark;
 
 public class CarMarkSpinnerAdapter extends ArrayAdapter<CarMark> {
 
-    // Your sent context
-    private Context context;
     // Your custom values for the spinner (User)
-    private CarMark[] values;
+    private final CarMark[] values;
 
     public CarMarkSpinnerAdapter(@NonNull Context context, int resource, CarMark[] values) {
         super(context, resource, values);
-        this.context = context;
+        // Your sent context
         this.values = values;
     }
 

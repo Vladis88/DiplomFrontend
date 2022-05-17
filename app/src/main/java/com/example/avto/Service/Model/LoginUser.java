@@ -1,6 +1,7 @@
 package com.example.avto.Service.Model;
 
 public class LoginUser {
+
     private String username;
     private String password;
 

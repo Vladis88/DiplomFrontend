@@ -13,8 +13,9 @@ import com.example.avto.Network.ApiBaseUrl;
 import com.example.avto.R;
 
 public class ViewPagerAdapter extends PagerAdapter {
-    private Context context;
-    private String[] imageUrls;
+
+    private final Context context;
+    private final String[] imageUrls;
 
     public ViewPagerAdapter(Context context, String[] imageUrls) {
         this.context = context;

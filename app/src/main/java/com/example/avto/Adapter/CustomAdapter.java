@@ -20,8 +20,8 @@ import java.util.List;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
 
-    private List<CarPost> dataList;
-    private Context context;
+    private final List<CarPost> dataList;
+    private final Context context;
     private final MainOnClick clickListener;
 
     public CustomAdapter(Context context, List<CarPost> dataList, MainOnClick clickListener){
